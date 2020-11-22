@@ -51,7 +51,7 @@ const elements = document.querySelector('.container');
                 el.style.setProperty("display", "none");
             }
         }
-    })
+    });
 
     // -----------------------------------------------------------------Segregation
 const programs = document.querySelectorAll('.program');
@@ -95,25 +95,25 @@ allBtn.addEventListener('click', () => {
     for (const el of games) {
         el.style.display = "block";
     }
-})
+});
 
 // --------------------------------------------------------------------Burger
-    const burger = document.querySelector('.burger');
-    const searchCon = document.querySelector('.search');
-    const colChange = document.querySelector('.col-change')
-    let menuOpen = false;
-    burger.addEventListener('click', () => {
-        if(!menuOpen) {
-            burger.classList.add('active');
-            searchCon.classList.add('active');
-            colChange.classList.add('active');
-            menuOpen = true;
-        } else{
-            burger.classList.remove('active');
+const burger = document.querySelector('.burger');
+const searchCon = document.querySelector('.search');
+const colChange = document.querySelector('.col-change')
+let menuOpen = false;
+burger.addEventListener('click', () => {
+    if(!menuOpen) {
+        burger.classList.add('active');
+        searchCon.classList.add('active');
+        colChange.classList.add('active');
+        menuOpen = true;
+    } else{
+        burger.classList.remove('active');
             searchCon.classList.remove('active');
             colChange.classList.remove('active');
             menuOpen = false;
         }
-    })
+    });
     
     
