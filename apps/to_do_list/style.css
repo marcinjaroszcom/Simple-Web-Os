@@ -1,0 +1,58 @@
+.toDoContainer {
+    width: 300px;
+    margin: 50px auto;
+}
+
+#todoInput,
+#addBtn {
+    background-color: black;
+    color: var(--Main-Color);
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#todoInput {
+    width: 240px;
+    border-bottom: 1px solid var(--Main-Color);
+    padding-left: 5px;
+}
+
+#todoInput::placeholder{
+    font-style: italic;
+    font-weight: normal;
+}
+
+#addBtn {
+    border: 1px solid var(--Main-Color);
+    border-radius: 5px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+#todoList {
+    color: var(--Main-Color);
+    align-items: flex-end;
+    margin-top: 50px;
+    width: 300px;
+}
+
+.task {
+    display: flex;
+    border-bottom: 1px solid var(--Main-Color);
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.remove {
+    border: 0px solid var(--Main-Color);
+    border-radius: 0px;
+    padding: 2px 6px;
+    background: black;
+    color: var(--Main-Color);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+}

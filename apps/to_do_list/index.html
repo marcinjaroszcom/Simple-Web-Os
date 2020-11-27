@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List | Simple Web OS</title>
+    <link rel="icon" href="../../img/favicon32.png" sizes="32x32" type="image/png">
+    <link href=../../css/style.css rel="stylesheet">
+    <link href=style.css rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-btn btn-all"><a href="../../index.html">All</a></div>
+        </div>
+        <div class="col-change">
+            <p>Color change:</p>
+            <div class="color-btn btn-col-green"></div>
+            <div class="color-btn btn-col-red"></div>
+            <div class="color-btn btn-col-blue"></div>
+        </div>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <h1>TO DO LIST</h1>
+    <div class="toDoContainer">
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Write your task here.." onfocus="this.placeholder=''" onblur="this.placeholder='Write your task here..'"></input>
+            <button type="submit" id="addBtn">ADD</button>
+        </form>
+        <div id="todoList"></div>
+    </div>
+    <a href="../../index.html"><svg class="exit" xmlns="http://www.w3.org/2000/svg" width="53.351" height="52" viewBox="0 0 53.351 52">
+            <path d="M30.664,51.164l-2.643,2.643a2.846,2.846,0,0,1-4.037,0L.836,30.672a2.846,2.846,0,0,1,0-4.037L23.984,3.487a2.846,2.846,0,0,1,4.037,0L30.664,6.13a2.861,2.861,0,0,1-.048,4.084L16.268,23.884H50.49a2.851,2.851,0,0,1,2.858,2.858v3.81A2.851,2.851,0,0,1,50.49,33.41H16.268L30.617,47.08A2.84,2.84,0,0,1,30.664,51.164Z" transform="translate(0.004 -2.647)" fill="" /></svg></a>
+    <footer>
+        <p>by Marcin Jarosz</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="../../js/burger.js"></script>
+    <script src="../../js/change_col.js"></script>
+</body>
+
+</html>

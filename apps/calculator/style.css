@@ -1,14 +1,3 @@
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: black;
-    --Main-Color: rgb(16, 189, 0);
-} */
-
 .main-calculator,
 .display,
 button {
@@ -29,12 +18,13 @@ button {
 
 button {
     width: 50px;
+    cursor: pointer;
 }
 
 .main-calculator {
     width: 290px;
     justify-content: center;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .display {
