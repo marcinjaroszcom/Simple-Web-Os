@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 
 * {
     padding: 0;
@@ -12,6 +12,7 @@ body {
     background: rgb(0, 0, 0);
     --Main-Color: rgb(0, 150, 0);
     color: var(--Main-Color);
+    font-weight: 900;
 }
 
 /* ----------------------HEADER------------------------------- */
@@ -197,10 +198,11 @@ main {
 .container {
     display: flex;
     flex-wrap: wrap;
+    width: 91vw;
 }
 
 .icon {
-    margin: 40px 10px 20px 0px;
+    margin: 40px 5px 0px 5px;
     transition: 0.3s ease 0s;
 }
 
@@ -225,6 +227,7 @@ main {
 
 .icon p {
     font-size: 14px;
+    max-width: 75px;
 }
 
 .exit {
@@ -269,5 +272,6 @@ footer{
 
     .icon p {
         font-size: 20px;
+        max-width: 175px;
     }
 }
