@@ -36,7 +36,7 @@ canvas.addEventListener('touchstart', e =>{
     for (var i = 0; i < e.touches.length; i++) {
         var touch = e.touches[i];
         x = touch.pageX - 10;
-        y = touch.pageY - 130;
+        y = touch.pageY - 210;
     }
 });
 
@@ -46,7 +46,7 @@ canvas.addEventListener('touchmove', e =>{
         var touch = e.touches[i];
             drawOnTouch(x, y);
             x = touch.pageX - 10;
-            y = touch.pageY - 130;
+            y = touch.pageY - 210;
     }
 });
 
