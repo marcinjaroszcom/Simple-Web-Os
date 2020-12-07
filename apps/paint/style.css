@@ -1,0 +1,57 @@
+.main{
+    width: 95vw;
+    height: calc(100vh - 180px);
+    margin: 0px auto;
+}
+canvas{
+    border: 1px solid var(--Main-Color);
+}
+.tool-container{
+    margin-top: 10px;
+}
+.tool-color,
+.tool-size{
+    width: 300px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.colBtn,
+#canvas-clear,
+.pencilSizeBtn{
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s ease 0s;
+    cursor: pointer;
+}
+.colBtn:hover,
+#canvas-clear:hover,
+.pencilSizeBtn:hover{
+    transform: scale(1.2);
+}
+.colBtn.green{
+    background: green;
+}
+.colBtn.red{
+    background: red;
+}
+.colBtn.blue{
+    background: blue;
+}
+.colBtn.yellow{
+    background: yellow;
+}
+#canvas-clear,
+.pencilSizeBtn{
+    background: black;
+    border: 1px solid var(--Main-Color);
+    color: var(--Main-Color);
+}
+@media (min-width: 1000px){
+    .tool-container{
+        display: flex;
+    }
+}
