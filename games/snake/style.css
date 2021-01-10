@@ -1,0 +1,113 @@
+canvas {
+    border: 1px solid var(--Main-Color);
+    display: block;
+    margin: 10px auto 0px;
+    transition: 0.3s ease 0s;
+}
+
+.gameOver {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.8);
+    top: 0;
+    display: none;
+}
+
+.gameOver p {
+    color: var(--Main-Color);
+    font-size: 100px;
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.score {
+    color: var(--Main-Color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.replayBtn {
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 100px;
+    border: 1px solid var(--Main-Color);
+    background-color: black;
+    color: var(--Main-Color);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.gameOverAct {
+    display: block;
+}
+
+.control {
+    width: 295px;
+    margin: 20px auto 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+}
+
+.control button {
+    width: 75px;
+    height: 75px;
+    border: 1px solid var(--Main-Color);
+    background: black;
+    margin: 10px;
+    transition: 0.3s ease 0s;
+}
+
+.control button svg {
+    height: 32px;
+    width: 31px;
+    fill: var(--Main-Color);
+    transition: 0.3s ease 0s;
+}
+
+.btn-up {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.btn-left{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.btn-down{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.btn-right{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.btn-left svg{
+    transform: rotate(-90deg);
+}
+
+.btn-right svg{
+    transform: rotate(90deg);
+}
+
+.btn-down svg{
+    transform: rotate(180deg);
+}
+
+@media(min-width: 1025px){
+    .control{
+        display: none;
+    }
+}
+@media(min-width: 375px){
+    .control {
+        width: 360px;
+    }
+    .control button {
+        width: 100px;
+        height: 100px;
+    }
+}
